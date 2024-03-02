@@ -1,3 +1,5 @@
+/*CSS FOR LOGIN*/
+
 body {
     background-color: #ffffff;
     font-size: 1.6rem;
@@ -225,4 +227,66 @@ body {
   border-radius: 5px;
   position: relative; 
   z-index: 1; 
+}
+
+/* CSS FOR DASHBOARD */
+.Dashboard {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+#body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  width: 250px; /* to adjust the sidebar */
+  padding-left: 0px; /* to adjust the padding */
+  height: 100vh;
+  background-color: #313131;
+  border-top-right-radius: 0px;
+  margin: 0;
+}
+
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  line-height: 80px;
+  text-align: center;
+  user-select: none;
+}
+
+.sidebar ul {
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+}
+
+.sidebar ul a {
+  font-size: 14px;
+  color: #fff;
+  display: block;
+  padding: 12px 10px; /* to adjust the padding to the left*/
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+
+.sidebar ul a:hover {
+  background-color: #747272; 
+  color: #fff;
+}
+
+.sidebar ul a i {
+  margin-right: 16px;
+  color: #ffffff;
+  outline: none;
+  position: relative;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
