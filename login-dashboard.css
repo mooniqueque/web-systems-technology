@@ -92,6 +92,8 @@ body {
   input[type="password"]:valid ~ .validation {
     display: block;
     border-color: #0C0;
+    right: 30px;
+    top: -9px;
   }
   input[type="text"]:valid ~ .validation span,
   input[type="password"]:valid ~ .validation span {
