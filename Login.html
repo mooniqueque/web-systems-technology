@@ -1,74 +1,37 @@
 <!DOCTYPE html>
-<head>
-<html lang="en">
-    
-<h1>
-    Student Registration Form
-</h1>
-<table bgcolor ="violet"style ="width: 100%"> 
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link rel="stylesheet" href="login-dashboard.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      </head>
+      <body>
+      <!-- partial:index.partial.html -->
+      <div id="login-form-wrap">
+        <h2>Login</h2>
+        <form id="login-form">
+          <p>
+        <div class="userdiv">
+            <i class="fas fa-user"></i>
+            <input type="text" id="username" name="username" placeholder="Username" required><i class="validation"><span></span><span></span></i>
+        </div>
+          </p>
+          <p>
+        <div class="passdiv">
+            <i class = "fas fa-lock"></i>
+            <input type="password" id="password" name="password" placeholder="Password" required><i class="validation"><span></span><span></span></i>
+        </div>
+          </p>
+          <p>
+        <div class ="logindiv">
+            <input type="submit" id="login" value="Login">
+            <i class="fas fa-sign-out"></i>
+        </div>
+          </p>
+        </form>
+      </div><!--login-form-wrap-->
+      <!-- partial -->
 
-    <tr bgcolor = "pink">
-        <th align= "left" height = "50"> First Name </th>
-        <th> <input  size = "80"> </th> 
-    </tr>
-    <tr bgcolor = "pink">
-        <th align= "left" height = "50" > Last Name</th>
-        <th> <input  size = "80"> </th> 
-    </tr>
-    <tr bgcolor = "pink">
-        <th align= "left" height = "50"> Email </th>
-        <th> <input  size = "80"> </th> 
-    </tr>
-    <tr bgcolor = "pink">
-        <th align= "left" height = "50" > Gender </th>
-        
-        <th> <select style="width: 88%" name="" id="Gender">
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-            <option value="Prefer not to say">Prefer not to say</option>
-        </th> 
-    </tr>
-    <tr bgcolor = "pink">
-        <th align= "left" height = "50"> Date of Birth </th>
-        <th> <input  size = "80"> </th> 
-    </tr>
-    <tr bgcolor = "pink">
-        <th align= "left" height = "50"> Address </th>
-        <th> <input  size = "80"> </th> 
-    </tr>
-    <tr bgcolor = "pink">
-        <th align= "left" height = "50"> City </th>
-        <th> <input  size = "80"> </th> 
-    </tr>
-    <tr bgcolor = "pink">
-        <th align= "left" height = "50"> Zip Code</th>
-        <th> <input  size = "80"> </th> 
-    </tr>
-    <tr bgcolor = "pink">
-        <th height = "50"></th>
-        <th> <style>
-            .container {
-              height: 0px;
-              position: relative;
-            }
-            
-            .left {
-              margin: 0;
-              position: absolute;
-              top: 50%;
-              left: 10%;
-              -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
-            }
-            </style>
-            
-            <div class="container">
-              <div class="left">
-                <button>Submit</button>
-              </div>
-            </div> </th> 
-    </tr>
-
-</table>
 </html>
-</head>
