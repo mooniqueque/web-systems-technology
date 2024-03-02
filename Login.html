@@ -12,26 +12,39 @@
       <div id="login-form-wrap">
         <h2>Login</h2>
         <form id="login-form">
-          <i class="fas fa-user"></i>
-          <i class = "fas fa-lock"></i>
-          <i class="fas fa-sign-in-alt"></i>
           <p>
         <div class="userdiv">
+          <label for = "username"><i class="fas fa-user"></i></label>
             <input type="text" id="username" name="username" placeholder="Username" required><i class="validation"><span></span><span></span></i>
         </div>
           </p>
           <p>
         <div class="passdiv">
+          <label for = "password"><i class="fas fa-lock"></i></label>
             <input type="password" id="password" name="password" placeholder="Password" required><i class="validation"><span></span><span></span></i>
         </div>
           </p>
           <p>
         <div class ="logindiv">
-            <input type="submit" id="login" value="Login">
+          <label for = "login"><i class="fas fa-sign-in-alt"></i></label>
+            <input type="submit" id="login" value="Login" onclick="auth()"/>
         </div>
           </p>
         </form>
-      </div><!--login-form-wrap-->
-      <!-- partial -->
+      </div>
+      <script>
+        function auth(){
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+          if (username == "am" && password=="123"){
+            window.location.assign("Dashboard.html");
+            alert("Login Successful")
+          }
+          else{
+            alert("Invalid Information");
+            return;
+          }
+        }
+      </script>
 
 </html>
