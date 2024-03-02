@@ -37,11 +37,11 @@ body {
     background-color: #fff;
     width: 30%;
     height: 350px;
-    margin: 150px auto;
+    margin: 170px auto;
     text-align: center;
     padding: 20px 20px 20px 20px;
-    border-radius: 4px;
-    box-shadow: 0px 30px 50px 0px rgba(15, 15, 15, 0.2);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 10px rgba(143, 143, 143, 0.2);
   }
   
   .userdiv .passdiv {
@@ -66,7 +66,7 @@ body {
   input[type="text"],
   input[type="password"] {
     width: 100%;
-    padding: 0 0 0 10px;
+    padding: 0 0 0 10%;
     margin: 0;
     color: #8a8b8e;
     border: 1px solid #c2c0ca;
@@ -144,7 +144,7 @@ body {
   }
 
   input[type="submit"]:hover {
-    background-color: #329dd5;
+    background-color: #1da6f0;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
   }
@@ -169,15 +169,15 @@ body {
   }
   .userdiv label{
     position: absolute;
-    left: 10px;
+    left: 25px;
     top: 50%;
     transform: translateY(-50%);
     color: #333;
   }
 .userdiv input{
-    width: calc(105% - 25px);
+    width: calc(100% - 30px);
     padding: 10px;
-    padding-left: 40px;
+    padding-left: 50px;
     border: 1px solid #ccc;
     border-radius: 5px;
 
@@ -188,21 +188,23 @@ body {
 }
 .passdiv label{
   position: absolute;
-  left: 10px;
+  left: 25px;
   top: 50%;
   transform: translateY(-50%);
   color: #333;
 }
 .passdiv input{
-  width: calc(105% - 25px);
+  width: calc(100% - 30px);
   padding: 10px;
-  padding-left: 40px;
+  padding-left: 50px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 .logindiv{
+  text-align: center;
   position: relative;
   margin-bottom: 20px;
+  
 }
 
 .logindiv label{
@@ -214,7 +216,7 @@ body {
   z-index: 2;
 }
 .logindiv input{
-  width: calc(150% - 90px);
+  width: 70%;
   padding: 20px;
   padding-right: 100px;
   border: 1px solid #ccc;
