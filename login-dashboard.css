@@ -167,13 +167,13 @@
     justify-content: left;
 
   }
-.userdiv{
+  .userdiv{
     position: relative;
     margin-bottom: 20px;
   }
   .userdiv label{
     position: absolute;
-    left: 25px;
+    left: 27px; /* adjust the position of icon*/
     top: 50%;
     transform: translateY(-50%);
     color: #333;
@@ -192,7 +192,7 @@
   }
    .passdiv label{
   position: absolute;
-  left: 25px;
+  left: 27px; /* adjust the position of icon*/
   top: 50%;
   transform: translateY(-50%);
   color: #333;
@@ -213,7 +213,7 @@
 
    .logindiv label{
   position: absolute;
-  right: 42%;
+  right: 42%; /* adjust the position of icon*/
   top: 50%;
   transform: translateY(-50%);
   color: #ffffff;
@@ -222,14 +222,15 @@
    .logindiv input{
   width: 70%;
   padding: 20px;
-  padding-right: 73%;
+  padding-right: 73%; 
   border: 1px solid #ccc;
   border-radius: 5px;
   position: relative; 
   z-index: 1; 
   }
 
-/* CSS FOR DASHBOARD */
+/* CSS FOR DASHBOARD*/
+/* SIDEBAR*/
    .Dashboard {
   padding: 0;
   margin: 0;
@@ -241,12 +242,13 @@
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  margin-top: -0.5%;
   }
 
    .sidebar {
-  width: 250px; /* to adjust the sidebar */
+  width: 15%; /* to adjust the sidebar */
   padding-left: 0px; /* to adjust the padding */
-  height: 100vh;
+  height: 100%;
   background-color: #333333;
   border-top-right-radius: 0px;
   margin: 0;
@@ -265,6 +267,7 @@
   list-style: none; 
   margin: 0; 
   padding: 0; 
+  margin-top: -6px;
   } 
 
    .sidebar ul a {
@@ -288,5 +291,34 @@
   position: relative;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  }
+
+/*TOP HEADER*/
+  .Topheader {
+    position: fixed;
+    top: 0; /* Position it at the top */
+    left: 240px;
+    width: 85%; 
+    background-color: #007BFF;
+    padding: 2%;
+    height: 8.3%; /* adjust the height of header */
+    text-align: center;
+    font-size: 30px; 
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: -1%; /* Position of the text at the top */
+  
+  }
+  .logoutbtn {
+    background-color: #4CAF50;
+    border: none;
+    background-color: #DC3545;
+    color: rgb(255, 255, 255);
+    padding: 8px 10px;
+    width: 80px;
+    border-radius: 4px ;
+    font-size: 14px;
+    margin-top: 1.6%;
+    margin-right: 90%;
   }
 
