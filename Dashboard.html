@@ -18,13 +18,20 @@
   </div>
   <div class = "Topheader">
     <header>Dashboard</header>
-    <button class = "logoutbtn">Logout</button>
+    <button id="logoutBtn" class = "logoutbtn">Logout</button>
   </div>
-  <div class = "Greetings">
+  <div class = "Body">
     <header> WELCOME, Andreanne Gorres!</header>
     <p>Welcome to the dashboard! This is the main content area where 
       you can display various information and charts.</p>
   </div>
-  <section></section>
+  <footer class = "Footer">
+    <p>&copy; 2024 Dashboard. All rights reserved.</p>
+  </footer>
+  <script>
+    document.getElementById("logoutBtn").onclick = function() {
+        location.href = "Login.html";
+    };
+</script>
 </body>
 </html> 
