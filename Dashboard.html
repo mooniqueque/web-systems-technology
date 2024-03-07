@@ -29,9 +29,11 @@
     <p>&copy; 2024 Dashboard. All rights reserved.</p>
   </footer>
   <script>
-    document.getElementById("logoutBtn").onclick = function() {
+    window.onload = function() {
+      document.getElementById("logoutBtn").onclick = function() {
         location.href = "Login.html";
+      };
     };
-</script>
+  </script>
 </body>
 </html> 
