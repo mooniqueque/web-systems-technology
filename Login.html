@@ -27,24 +27,26 @@
           <p>
         <div class ="logindiv">
           <label for = "login"><i class="fas fa-sign-in-alt"></i></label>
-            <input type="submit" id="login" value="Login" onclick="auth()"/>
+            <input type="submit" id="login" value="Login"/>
         </div>
           </p>
         </form>
       </div>
       <script>
-         function auth(){
-          var username = document.getElementById("username").value;
-          var password = document.getElementById("password").value;
-          if (username == "am" && password=="123"){
-            window.location.assign("Dashboard.html");
-            alert("Login Successful")
-          }
-          else{
-            alert("Invalid Information");
-            return;
-          }
-        }
+        window.onload = function() {
+            document.getElementById("login-form").addEventListener("submit", function(event) {
+                event.preventDefault();
+                
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+                
+                if(username === "am" && password === "123") {
+                    location.href = "Dashboard.html";
+                    alert("Login Successful");
+                } else {
+                    alert("Invalid credentials. Please try again.");
+                }
+            });
+        };
     </script>
-
 </html>
