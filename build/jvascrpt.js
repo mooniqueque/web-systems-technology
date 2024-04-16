@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
         email.innerHTML = `<input type="text" id="editEmail" value="${email.textContent}">`;
         role.innerHTML = `<input type="text" id="editRole" value="${role.textContent}">`;
 
-        button.innerHTML = '<i class="fas fa-save"></i>';
+        button.innerHTML = '<i class="fas fa-save" style="color: green;"></i>';
         button.removeEventListener('click', editRow);
         button.addEventListener('click', saveRow);
     }
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
         email.parentNode.textContent = email.value;
         role.parentNode.textContent = role.value;
 
-        button.innerHTML = '<i class="fas fa-edit"></i>';
+        button.innerHTML = '<i class="fas fa-edit" style="color: blue;"></i>';
         button.removeEventListener('click', saveRow);
         button.addEventListener('click', editRow);
     }
